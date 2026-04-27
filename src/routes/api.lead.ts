@@ -31,7 +31,7 @@ export const Route = createFileRoute("/api/lead")({
   server: {
     handlers: {
       OPTIONS: async () => new Response(null, { status: 204, headers: corsHeaders }),
-      POST: async ({ request }) => {
+      POST: async ({ request }: { request: Request }) => {
         let payload: unknown;
         try {
           payload = await request.json();
@@ -63,7 +63,7 @@ export const Route = createFileRoute("/api/lead")({
 
         // Forward to n8n webhook if configured. Failure here does NOT
         // break the user experience — we still return success so the
-        // visitor gets to the booking step.
+        // visitor reaches the booking step.
         const webhook = process.env.N8N_WEBHOOK_URL;
         if (webhook) {
           try {
@@ -85,5 +85,6 @@ export const Route = createFileRoute("/api/lead")({
         return json({ ok: true });
       },
     },
-  },
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } as any,
 });
