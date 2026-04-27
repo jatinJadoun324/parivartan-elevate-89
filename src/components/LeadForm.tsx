@@ -38,7 +38,8 @@ export function LeadForm({ onClose, variant = "modal" }: LeadFormProps) {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<LeadInput>({
-    resolver: zodResolver(leadSchema) as never,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    resolver: zodResolver(leadSchema as any),
     defaultValues: { goal: "Lose Fat" },
   });
 
