@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const leadSchema = z.object({
   name: z.string().trim().min(2, "Please enter your full name").max(80),
   email: z.string().trim().email("Enter a valid email address").max(160),
-  phone: z.string().trim().max(30).optional().or(z.literal("")),
+  phone: z.string().trim().max(30).optional(),
   goal: z.enum([
     "Lose Fat",
     "Build Muscle",
@@ -38,7 +38,7 @@ export function LeadForm({ onClose, variant = "modal" }: LeadFormProps) {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<LeadInput>({
-    resolver: zodResolver(leadSchema),
+    resolver: zodResolver(leadSchema) as never,
     defaultValues: { goal: "Lose Fat" },
   });
 
