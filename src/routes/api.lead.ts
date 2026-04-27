@@ -27,6 +27,7 @@ function json(body: unknown, status = 200) {
   });
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Route = createFileRoute("/api/lead")({
   server: {
     handlers: {
@@ -61,9 +62,6 @@ export const Route = createFileRoute("/api/lead")({
           userAgent: request.headers.get("user-agent") ?? null,
         };
 
-        // Forward to n8n webhook if configured. Failure here does NOT
-        // break the user experience — we still return success so the
-        // visitor reaches the booking step.
         const webhook = process.env.N8N_WEBHOOK_URL;
         if (webhook) {
           try {
@@ -85,6 +83,5 @@ export const Route = createFileRoute("/api/lead")({
         return json({ ok: true });
       },
     },
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } as any,
-});
+  },
+} as any);
