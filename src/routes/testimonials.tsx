@@ -7,7 +7,7 @@ import { Star, ArrowRight } from "lucide-react";
 
 const STORIES = [
   { quote: "I'd tried every program. The difference here is the system — they remove every excuse. I lost 22 lbs in 16 weeks while closing the biggest quarter of my career.", name: "Marcus J.", role: "VP Sales · NYC", result: "−22 lbs · 16 weeks" },
-  { quote: "The supplements showing up at my door each month was a small detail that changed everything. No more decisions, no more excuses.", name: "Priya R.", role: "Founder · SaaS", result: "−14 lbs · 12 weeks" },
+  { quote: "The nutrition products showing up at my door each month was a small detail that changed everything. No more decisions, no more excuses.", name: "Priya R.", role: "Founder · SaaS", result: "−14 lbs · 12 weeks" },
   { quote: "Down 18 lbs and stronger than I've been since college. My coach actually adjusts the plan week to week — not a copy-paste template.", name: "Daniel K.", role: "Investment Director", result: "−18 lbs · +15% strength" },
   { quote: "I travel 3 weeks a month. They built a plan that works in airports, hotel gyms, and client dinners. Game-changer.", name: "Sarah L.", role: "Management Consultant", result: "−16 lbs · 20 weeks" },
   { quote: "Energy is what surprised me. The body change came, but feeling sharp at 6pm meetings is what I'd pay for alone.", name: "Andre M.", role: "Tech Founder", result: "+ Energy · −9 lbs" },

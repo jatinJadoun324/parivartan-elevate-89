@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Premium done-for-you transformation coaching for busy professionals. 1-on-1 coaching, custom meal plans, supplements included — $349/month, all inclusive.",
+          "Premium done-for-you transformation coaching for busy professionals. 1-on-1 coaching, custom meal plans, nutrition included — $349/month, all inclusive.",
       },
       { property: "og:title", content: "Parivartan Nutrition — Premium Transformation Coaching" },
       {
@@ -71,11 +71,6 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 grid lg:grid-cols-12 gap-12 items-center relative">
         <div className="lg:col-span-7">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-[11px] uppercase tracking-[0.2em] text-primary font-semibold">
-              <Sparkles className="h-3 w-3" /> Limited Slots — April 2026
-            </span>
-          </Reveal>
-          <Reveal delay={0.1}>
             <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] text-balance">
               Transform your body without sacrificing your{" "}
               <span className="gold-text">schedule.</span>
@@ -84,7 +79,7 @@ function Hero() {
           <Reveal delay={0.18}>
             <p className="mt-6 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
               A done-for-you transformation system for founders, executives, and
-              high-performers. Coaching, custom nutrition, and premium supplements —
+              high-performers. Coaching, custom nutrition, and premium nutrition products —
               delivered. <span className="text-foreground/90 font-medium">One flat price.</span>
             </p>
           </Reveal>
@@ -237,7 +232,7 @@ function Solution() {
         </Reveal>
         <Reveal delay={0.26}>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-            {["1-on-1 Coaching", "Custom Meal Plans", "Supplements Delivered", "Weekly Optimization"].map(
+            {["1-on-1 Coaching", "Custom Meal Plans", "Nutrition Delivered", "Weekly Optimization"].map(
               (t) => (
                 <div
                   key={t}
@@ -260,8 +255,8 @@ function HowItWorks() {
   const steps = [
     { n: "01", icon: Calendar, t: "Book Your Call", d: "Free 30-min strategy call to assess your goals, schedule, and constraints." },
     { n: "02", icon: ClipboardList, t: "Custom Plan", d: "Personalized nutrition, training, and recovery plan built around your real life." },
-    { n: "03", icon: Truck, t: "Supplements Delivered", d: "Premium supplement stack shipped to your door — no extra cost, no thinking required." },
-    { n: "04", icon: TrendingUp, t: "Weekly Optimization", d: "Weekly check-ins and adjustments. Direct access to your coach between sessions." },
+    { n: "03", icon: Truck, t: "Nutrition Delivered", d: "Premium nutrition and supplement stack shipped to your door — no extra cost, no thinking required." },
+    { n: "04", icon: TrendingUp, t: "Daily Accountability Checks", d: "Daily check-ins and adjustments. Direct access to your coach between sessions." },
   ];
   return (
     <section id="how" className="py-24 md:py-32">
@@ -298,7 +293,7 @@ function Features() {
   const items = [
     { icon: Users, t: "1-on-1 Coaching", d: "Direct access to a senior coach who knows your goals, history, and schedule." },
     { icon: UtensilsCrossed, t: "Custom Meal Plans", d: "Built around your travel, taste, and calendar. Restaurant-friendly. Family-friendly." },
-    { icon: Pill, t: "Supplements Included", d: "Premium-grade stack tailored to your needs. Shipped monthly — no extra charges." },
+    { icon: Pill, t: "Nutrition Included", d: "Premium-grade nutrition stack tailored to your needs. Shipped monthly — no extra charges." },
     { icon: MessageSquare, t: "Weekly Check-ins", d: "Structured check-ins that catch plateaus before they happen and accelerate momentum." },
     { icon: Sparkles, t: "Direct Support", d: "Message your coach between sessions. Real responses from a real human, not a chatbot." },
     { icon: LineChart, t: "Progress Tracking", d: "Body composition, strength, energy, sleep — tracked and reviewed every week." },
@@ -339,7 +334,7 @@ function Pricing() {
     "1-on-1 senior coach",
     "Custom nutrition plan",
     "Custom training plan",
-    "Premium supplement stack — delivered",
+    "Premium nutrition stack — delivered",
     "Weekly check-ins & adjustments",
     "Direct messaging with your coach",
     "Body composition & progress tracking",
@@ -371,7 +366,7 @@ function Pricing() {
                 <span className="font-display text-6xl md:text-7xl font-bold gold-text">$349</span>
                 <span className="text-muted-foreground pb-3">/month</span>
               </div>
-              <p className="mt-2 text-sm text-muted-foreground">Coaching + nutrition + supplements — fully included.</p>
+              <p className="mt-2 text-sm text-muted-foreground">Coaching + nutrition + nutrition products — fully included.</p>
 
               <div className="hairline my-8" />
 
@@ -408,7 +403,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "The supplements showing up at my door each month was a small detail that changed everything. No more decisions, no more excuses.",
+      "The nutrition products showing up at my door each month was a small detail that changed everything. No more decisions, no more excuses.",
     name: "Priya R.",
     role: "Founder · SaaS",
   },
@@ -514,11 +509,6 @@ function FinalCTA() {
       />
       <div className="relative mx-auto max-w-4xl px-5 md:px-8 text-center">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-[11px] uppercase tracking-[0.25em] text-primary font-semibold">
-            <Sparkles className="h-3 w-3" /> Limited Slots Available This Month
-          </span>
-        </Reveal>
-        <Reveal delay={0.1}>
           <h2 className="mt-6 font-display text-4xl md:text-6xl font-bold leading-[1.05] text-balance">
             Ready to <span className="gold-text">transform</span>?
           </h2>

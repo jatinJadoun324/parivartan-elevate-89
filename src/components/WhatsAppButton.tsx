@@ -2,9 +2,9 @@
 import { MessageCircle } from "lucide-react";
 
 // Update to your real WhatsApp number (international format, no + or spaces)
-const WHATSAPP_NUMBER = "15551234567";
+const WHATSAPP_NUMBER = "918817483686";
 const PREFILL =
-  "Hi! I'd like to learn more about the Parivartan Nutrition transformation program.";
+  "Hi! I'd like to learn more about the Parivartan Nutrition transformation program with nutrition delivered.";
 
 export function WhatsAppButton() {
   const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(PREFILL)}`;

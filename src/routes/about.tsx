@@ -12,7 +12,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Parivartan means transformation. We build done-for-you fitness and nutrition systems for high-performing professionals — coaching, meal plans, and supplements in one premium service.",
+          "Parivartan means transformation. We build done-for-you fitness and nutrition systems for high-performing professionals — coaching, meal plans, and nutrition products in one premium service.",
       },
       { property: "og:title", content: "About Parivartan Nutrition" },
       {
@@ -29,7 +29,7 @@ function AboutPage() {
   const { open } = useLeadModal();
   const pillars = [
     { icon: Target, t: "Personalization", d: "Every plan is built — not picked from a template — around your body, schedule, and goals." },
-    { icon: ShieldCheck, t: "Premium Standard", d: "Senior coaches, premium-grade supplements, and a service experience worthy of executives." },
+    { icon: ShieldCheck, t: "Premium Standard", d: "Senior coaches, premium-grade nutrition products, and a service experience worthy of executives." },
     { icon: HeartPulse, t: "Sustainable Results", d: "We optimize for what holds at month 12, not month 1. No crashes, no extremes." },
     { icon: Award, t: "Accountability", d: "Weekly structure, direct messaging, and real human coaching — not apps and dashboards." },
   ];
@@ -74,7 +74,7 @@ function AboutPage() {
               </p>
               <p>
                 Parivartan was built around a simple idea: if the program respects your time and
-                removes friction, results compound. We handle the planning, the supplementation, and
+                removes friction, results compound. We handle the planning, the nutrition products, and
                 the weekly optimization. You execute. You transform.
               </p>
               <p>
