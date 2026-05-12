@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/SiteShell";
 import { LeadForm } from "@/components/LeadForm";
 import { Reveal } from "@/components/Reveal";
+import { CalendlyWidget } from "@/components/CalendlyWidget";
 import { CheckCircle2, Calendar } from "lucide-react";
 import { z } from "zod";
 
@@ -13,7 +14,7 @@ const searchSchema = z.object({
 
 // Set this in your env (see README) when you have a Calendly link.
 // Example: https://calendly.com/your-handle/30min
-const CALENDLY_URL = import.meta.env.VITE_CALENDLY_URL as string | undefined;
+const CALENDLY_URL = "https://calendly.com/jatin-jadoun8e/optivise-strategy-call";
 
 export const Route = createFileRoute("/book")({
   validateSearch: searchSchema,
@@ -37,7 +38,7 @@ export const Route = createFileRoute("/book")({
 
 function BookPage() {
   const { name, email, goal } = Route.useSearch();
-  const calendly = buildCalendlyUrl(CALENDLY_URL, { name, email, goal });
+  const calendly = CALENDLY_URL;
 
   return (
     <SiteShell>
@@ -86,18 +87,13 @@ function BookPage() {
 
             <Reveal delay={0.1} className="lg:col-span-3">
               <div className="relative rounded-3xl border border-primary/20 bg-onyx-soft p-7 md:p-8">
-                {calendly ? (
-                  <div className="overflow-hidden rounded-2xl">
-                    <iframe
-                      title="Schedule a call"
-                      src={calendly}
-                      className="w-full h-[720px] border-0 bg-white"
-                      loading="lazy"
-                    />
-                  </div>
-                ) : (
-                  <LeadForm variant="page" />
-                )}
+                <CalendlyWidget 
+                  url="https://calendly.com/jatin-jadoun8e/optivise-strategy-call"
+                  height="700px"
+                />
+                <p className="mt-4 text-xs text-muted-foreground text-center">
+                  If the calendar doesn't load, <a href="https://calendly.com/jatin-jadoun8e/optivise-strategy-call" target="_blank" rel="noreferrer" className="text-primary underline">click here to open it in a new tab</a>
+                </p>
               </div>
             </Reveal>
           </div>
