@@ -86,7 +86,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-onyx-soft/30 border-y border-white/5">
+      <section className="py-20 md:py-28 bg-ivory-soft/30 border-y border-foreground/10">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <Reveal>
             <div className="max-w-2xl">
@@ -99,7 +99,7 @@ function AboutPage() {
           <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {pillars.map((p, i) => (
               <Reveal key={p.t} delay={i * 0.08}>
-                <div className="h-full rounded-2xl border border-white/8 bg-onyx p-7 hover:border-primary/30 transition-colors">
+                <div className="h-full rounded-2xl border border-foreground/10 bg-white p-7 hover:border-primary/30 transition-colors">
                   <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 border border-primary/20 text-primary">
                     <p.icon className="h-5 w-5" />
                   </div>

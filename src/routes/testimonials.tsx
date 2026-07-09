@@ -61,7 +61,7 @@ function TestimonialsPage() {
                 { n: "4.9★", l: "Avg Rating" },
                 { n: "92%", l: "Retention" },
               ].map((s) => (
-                <div key={s.l} className="text-center rounded-2xl border border-white/8 bg-onyx-soft py-7">
+                <div key={s.l} className="text-center rounded-2xl border border-foreground/10 bg-ivory-soft py-7">
                   <div className="font-display text-3xl md:text-4xl font-bold gold-text">{s.n}</div>
                   <div className="mt-1 text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground">{s.l}</div>
                 </div>
@@ -76,7 +76,7 @@ function TestimonialsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {STORIES.map((t, i) => (
               <Reveal key={t.name} delay={(i % 3) * 0.06}>
-                <div className="h-full rounded-2xl border border-white/8 bg-onyx-soft p-7 hover:border-primary/30 transition-colors">
+                <div className="h-full rounded-2xl border border-foreground/10 bg-ivory-soft p-7 hover:border-primary/30 transition-colors">
                   <div className="flex items-center justify-between">
                     <div className="flex gap-0.5">
                       {Array.from({ length: 5 }).map((_, k) => (

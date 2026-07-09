@@ -22,7 +22,7 @@ function TermsPage() {
         <div className="mt-10 space-y-8 text-foreground/85 leading-relaxed text-[15px]">
           <Section title="Service">
             Parivartan Nutrition provides coaching, nutrition planning, and supplement supply on a
-            month-to-month subscription basis at $349/month.
+            month-to-month subscription basis — contact for pricing after free strategy call.
           </Section>
           <Section title="Eligibility">
             Services are intended for adults (18+) in general good health. By enrolling, you confirm

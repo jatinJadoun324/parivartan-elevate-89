@@ -4,7 +4,7 @@ import { Mail, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/5 bg-onyx pt-20 pb-10">
+    <footer className="relative border-t border-foreground/10 bg-ivory pt-20 pb-10">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2 max-w-sm">
@@ -48,20 +48,20 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:hello@parivartannutrition.com"
-                  className="inline-flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors"
-                >
-                  <Mail className="h-4 w-4" /> hello@parivartannutrition.com
-                </a>
+                href="mailto:parivartannutrition@gmail.com"
+                className="inline-flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors"
+              >
+                <Mail className="h-4 w-4" /> parivartannutrition@gmail.com
+              </a>
               </li>
               <li>
                 <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors"
-                >
-                  <Instagram className="h-4 w-4" /> @parivartannutrition
+                  href="https://instagram.com/parivartan.nutrition"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors"
+              >
+                <Instagram className="h-4 w-4" /> @parivartan.nutrition
                 </a>
               </li>
             </ul>

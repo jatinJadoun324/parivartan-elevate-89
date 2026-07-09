@@ -40,7 +40,7 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 40, opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="relative z-10 w-full md:max-w-md max-h-[92vh] overflow-y-auto rounded-t-3xl md:rounded-3xl bg-onyx-soft border border-primary/20 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] p-6 md:p-8"
+              className="relative z-10 w-full md:max-w-md max-h-[92vh] overflow-y-auto rounded-t-3xl md:rounded-3xl bg-ivory-soft border border-primary/20 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.1)] p-6 md:p-8"
             >
               <LeadForm onClose={close} />
             </motion.div>

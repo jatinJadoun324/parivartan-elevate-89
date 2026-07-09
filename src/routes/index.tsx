@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Premium done-for-you transformation coaching for busy professionals. 1-on-1 coaching, custom meal plans, nutrition included — $349/month, all inclusive.",
+          "Premium done-for-you transformation coaching for busy professionals. 1-on-1 coaching, custom meal plans, nutrition included — Contact for pricing after free strategy call.",
       },
       { property: "og:title", content: "Parivartan Nutrition — Premium Transformation Coaching" },
       {
@@ -67,7 +67,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden bg-radial-gold pt-16 pb-24 md:pt-24 md:pb-32">
       <div className="absolute inset-x-0 -top-24 h-[600px] pointer-events-none opacity-60"
-           style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.18), transparent 60%)" }} />
+           style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(76,175,80,0.18), transparent 60%)" }} />
       <div className="mx-auto max-w-7xl px-5 md:px-8 grid lg:grid-cols-12 gap-12 items-center relative">
         <div className="lg:col-span-7">
           <Reveal>
@@ -112,7 +112,7 @@ function Hero() {
           <Reveal delay={0.2}>
             <div className="relative mx-auto max-w-md">
               <div className="absolute -inset-6 bg-gradient-to-br from-primary/30 via-transparent to-accent/20 blur-3xl opacity-60" />
-              <div className="relative rounded-3xl border border-primary/20 bg-onyx-soft/80 backdrop-blur-xl p-10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)]">
+              <div className="relative rounded-3xl border border-primary/20 bg-ivory-soft/80 backdrop-blur-xl p-10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.1)]">
                 <Logo className="mx-auto h-40 w-40 object-contain" />
                 <div className="mt-6 text-center">
                   <p className="text-[11px] uppercase tracking-[0.3em] text-primary">
@@ -125,7 +125,7 @@ function Hero() {
                 <div className="gold-divider mt-6" />
                 <div className="mt-6 grid grid-cols-3 gap-4 text-center">
                   <Stat n="100+" l="Transformed" />
-                  <Stat n="$349" l="All-In Price" />
+                  <Stat n="Contact for Pricing" l="After Free Strategy Call" />
                   <Stat n="4.9★" l="Client Rating" />
                 </div>
               </div>
@@ -149,7 +149,7 @@ function Stat({ n, l }: { n: string; l: string }) {
 /* ---------------------------- TRUST STRIP --------------------------- */
 function TrustStrip() {
   return (
-    <section className="border-y border-white/5 bg-onyx-soft/40 py-6">
+    <section className="border-y border-foreground/10 bg-ivory-soft/40 py-6">
       <div className="mx-auto max-w-7xl px-5 md:px-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
         <span className="text-primary font-semibold">100+ Transformations</span>
         <span className="opacity-30">|</span>
@@ -196,7 +196,7 @@ function Problem() {
         <div className="mt-14 grid md:grid-cols-3 gap-6">
           {items.map((it, i) => (
             <Reveal key={it.title} delay={i * 0.1}>
-              <div className="h-full rounded-2xl border border-white/8 bg-onyx-soft p-8 hover:border-primary/30 transition-colors">
+              <div className="h-full rounded-2xl border border-foreground/10 bg-ivory-soft p-8 hover:border-primary/30 transition-colors">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 border border-primary/20 text-primary">
                   <it.icon className="h-5 w-5" />
                 </div>
@@ -214,7 +214,7 @@ function Problem() {
 /* ---------------------------- SOLUTION ------------------------------ */
 function Solution() {
   return (
-    <section className="relative py-24 md:py-32 bg-onyx-soft/40 border-y border-white/5">
+    <section className="relative py-24 md:py-32 bg-ivory-soft/40 border-y border-foreground/10">
       <div className="mx-auto max-w-4xl px-5 md:px-8 text-center">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">The Solution</p>
@@ -272,7 +272,7 @@ function HowItWorks() {
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((s, i) => (
             <Reveal key={s.n} delay={i * 0.08}>
-              <div className="relative h-full rounded-2xl border border-white/8 bg-gradient-to-b from-onyx-soft to-onyx p-8 hover:border-primary/30 transition-colors">
+              <div className="relative h-full rounded-2xl border border-foreground/10 bg-gradient-to-b from-ivory-soft to-ivory p-8 hover:border-primary/30 transition-colors">
                 <div className="absolute top-6 right-6 font-display text-5xl font-bold text-primary/10">{s.n}</div>
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 border border-primary/20 text-primary">
                   <s.icon className="h-5 w-5" />
@@ -299,7 +299,7 @@ function Features() {
     { icon: LineChart, t: "Progress Tracking", d: "Body composition, strength, energy, sleep — tracked and reviewed every week." },
   ];
   return (
-    <section className="py-24 md:py-32 bg-onyx-soft/30 border-y border-white/5">
+    <section className="py-24 md:py-32 bg-ivory-soft/30 border-y border-foreground/10">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <div className="max-w-2xl">
@@ -312,7 +312,7 @@ function Features() {
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((it, i) => (
             <Reveal key={it.t} delay={i * 0.06}>
-              <div className="h-full rounded-2xl border border-white/8 bg-onyx p-7 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300">
+              <div className="h-full rounded-2xl border border-foreground/10 bg-white p-7 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 border border-primary/20 text-primary">
                   <it.icon className="h-5 w-5" />
                 </div>
@@ -355,18 +355,18 @@ function Pricing() {
         <Reveal delay={0.15}>
           <div className="mt-12 relative">
             <div className="absolute -inset-px rounded-3xl bg-gradient-to-b from-primary/40 via-primary/10 to-transparent" />
-            <div className="relative rounded-3xl bg-onyx-soft border border-primary/20 p-8 md:p-12">
+            <div className="relative rounded-3xl bg-ivory-soft border border-primary/20 p-8 md:p-12">
               <div className="flex items-center justify-between">
                 <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/30 px-4 py-1.5 text-[11px] uppercase tracking-[0.2em] text-primary font-semibold">
                   <Sparkles className="h-3 w-3" /> All-Inclusive
                 </span>
                 <span className="text-xs text-muted-foreground">Cancel anytime</span>
               </div>
-              <div className="mt-8 flex items-end gap-2">
-                <span className="font-display text-6xl md:text-7xl font-bold gold-text">$349</span>
-                <span className="text-muted-foreground pb-3">/month</span>
+              <div className="mt-8 text-center">
+                <span className="font-display text-3xl md:text-5xl font-bold gold-text">Contact for Pricing</span>
+                <p className="mt-3 text-base text-primary font-semibold">After Free Strategy Call</p>
               </div>
-              <p className="mt-2 text-sm text-muted-foreground">Coaching + nutrition + nutrition products — fully included.</p>
+              <p className="mt-6 text-sm text-muted-foreground">Coaching + nutrition + nutrition products — fully included.</p>
 
               <div className="hairline my-8" />
 
@@ -435,7 +435,7 @@ const TESTIMONIALS = [
 
 function SocialProof() {
   return (
-    <section className="py-24 md:py-32 bg-onyx-soft/30 border-y border-white/5">
+    <section className="py-24 md:py-32 bg-ivory-soft/30 border-y border-foreground/10">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <div className="text-center max-w-2xl mx-auto">
@@ -504,7 +504,7 @@ function FinalCTA() {
         className="absolute inset-0 pointer-events-none opacity-80"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 50%, rgba(212,175,55,0.18), transparent 65%)",
+            "radial-gradient(ellipse at 50% 50%, rgba(76,175,80,0.18), transparent 65%)",
         }}
       />
       <div className="relative mx-auto max-w-4xl px-5 md:px-8 text-center">

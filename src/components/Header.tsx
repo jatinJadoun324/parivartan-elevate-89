@@ -31,7 +31,7 @@ export function Header() {
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-500",
         scrolled
-          ? "bg-onyx/85 backdrop-blur-xl border-b border-white/5"
+          ? "bg-white/85 backdrop-blur-xl border-b border-foreground/10"
           : "bg-transparent",
       )}
     >
@@ -74,7 +74,7 @@ export function Header() {
 
       {/* mobile menu */}
       {mobile && (
-        <div className="md:hidden bg-onyx border-t border-white/5">
+        <div className="md:hidden bg-white border-t border-foreground/10">
           <div className="px-5 py-6 flex flex-col gap-4">
             {nav.map((item) => (
               <Link

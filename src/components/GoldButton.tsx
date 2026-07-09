@@ -7,7 +7,7 @@ type Size = "sm" | "md" | "lg";
 
 const variants: Record<Variant, string> = {
   gold:
-    "bg-gradient-to-b from-[#E5C158] via-primary to-[#B8902A] text-primary-foreground shadow-[0_10px_30px_-10px_rgba(212,175,55,0.55)] hover:shadow-[0_18px_45px_-12px_rgba(212,175,55,0.7)] hover:brightness-105 active:brightness-95",
+    "bg-gradient-to-b from-[#81C784] via-primary to-[#388E3C] text-primary-foreground shadow-[0_10px_30px_-10px_rgba(76,175,80,0.55)] hover:shadow-[0_18px_45px_-12px_rgba(76,175,80,0.7)] hover:brightness-105 active:brightness-95",
   outline:
     "border border-primary/40 text-primary hover:bg-primary/10 hover:border-primary",
   ghost:

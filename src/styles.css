@@ -1,16 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght=500;600;700;800&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap");
-
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Parivartan Nutrition — Premium dark / gold design system.
- * All tokens defined in oklch. Brand colors derived from the logo:
- *   #0B0F0F (onyx)   #D4AF37 (gold)   #C19A2E (gold-hover)
- *   #7A9A3A (green)  #E6EDD4 (soft-green)  #F7F8F5 (ivory)
+ * Parivartan Nutrition — Premium light / green design system.
+ * All tokens defined in oklch.
  */
 
 @theme inline {
@@ -45,51 +42,48 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-onyx: var(--onyx);
-  --color-onyx-soft: var(--onyx-soft);
   --color-ivory: var(--ivory);
-  --color-gold: var(--primary);
-  --color-gold-hover: var(--primary-hover);
-  --color-leaf: var(--accent);
+  --color-ivory-soft: var(--ivory-soft);
+  --color-leaf: var(--primary);
+  --color-leaf-hover: var(--primary-hover);
   --color-leaf-soft: var(--accent-soft);
 }
 
 :root {
   --radius: 0.75rem;
 
-  --onyx: oklch(0.16 0.005 180);
-  --onyx-soft: oklch(0.21 0.006 180);
   --ivory: oklch(0.985 0.004 95);
+  --ivory-soft: oklch(0.97 0.006 95);
 
-  --background: oklch(0.16 0.005 180);
-  --foreground: oklch(1 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0.005 180);
 
-  --card: oklch(0.21 0.006 180);
-  --card-foreground: oklch(1 0 0);
+  --card: oklch(0.97 0.006 95);
+  --card-foreground: oklch(0.16 0.005 180);
 
-  --popover: oklch(0.18 0.005 180);
-  --popover-foreground: oklch(1 0 0);
+  --popover: oklch(0.98 0.005 95);
+  --popover-foreground: oklch(0.16 0.005 180);
 
-  --primary: oklch(0.78 0.135 85);
-  --primary-foreground: oklch(0.16 0.005 180);
-  --primary-hover: oklch(0.72 0.13 80);
+  --primary: oklch(0.55 0.12 140); /* Green #4CAF50 */
+  --primary-foreground: oklch(1 0 0);
+  --primary-hover: oklch(0.48 0.115 138); /* Darker green */
 
-  --secondary: oklch(0.25 0.006 180);
-  --secondary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.01 95);
+  --secondary-foreground: oklch(0.16 0.005 180);
 
-  --muted: oklch(0.24 0.006 180);
-  --muted-foreground: oklch(0.78 0.005 180);
+  --muted: oklch(0.96 0.008 95);
+  --muted-foreground: oklch(0.5 0.01 180);
 
-  --accent: oklch(0.65 0.105 125);
-  --accent-foreground: oklch(0.16 0.005 180);
-  --accent-soft: oklch(0.93 0.04 125);
+  --accent: oklch(0.6 0.115 138);
+  --accent-foreground: oklch(1 0 0);
+  --accent-soft: oklch(0.92 0.05 140);
 
   --destructive: oklch(0.62 0.22 27);
   --destructive-foreground: oklch(1 0 0);
 
-  --border: oklch(1 0 0 / 0.08);
-  --input: oklch(1 0 0 / 0.12);
-  --ring: oklch(0.78 0.135 85);
+  --border: oklch(0.16 0.005 180 / 0.08);
+  --input: oklch(0.16 0.005 180 / 0.12);
+  --ring: oklch(0.55 0.12 140);
 }
 
 @layer base {
@@ -113,8 +107,8 @@
   }
 
   ::selection {
-    background-color: color-mix(in oklab, var(--primary) 70%, transparent);
-    color: var(--primary-foreground);
+    background-color: color-mix(in oklab, var(--primary) 30%, transparent);
+    color: var(--foreground);
   }
 }
 
@@ -123,7 +117,7 @@
   .text-pretty  { text-wrap: pretty; }
 
   .gold-text {
-    background: linear-gradient(135deg, #E5C158 0%, #D4AF37 45%, #B8902A 100%);
+    background: linear-gradient(135deg, #81C784 0%, #4CAF50 45%, #388E3C 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -135,13 +129,13 @@
   }
 
   .hairline {
-    background: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.15), transparent);
+    background: linear-gradient(90deg, transparent, oklch(0.16 0.005 180 / 0.15), transparent);
     height: 1px;
   }
 
   .bg-radial-gold {
     background:
-      radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--primary) 18%, transparent) 0%, transparent 55%),
+      radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--primary) 15%, transparent) 0%, transparent 55%),
       var(--background);
   }
 }

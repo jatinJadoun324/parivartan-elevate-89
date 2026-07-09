@@ -36,7 +36,7 @@ function PrivacyPage() {
           </Section>
           <Section title="Data Retention">
             We retain lead data for as long as necessary to serve you and as required by law. You
-            may request deletion at any time by emailing hello@parivartannutrition.com.
+            may request deletion at any time by emailing parivartannutrition@gmail.com.
           </Section>
           <Section title="Your Rights">
             You have the right to access, correct, or delete your personal data. Contact us to

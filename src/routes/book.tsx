@@ -61,7 +61,7 @@ function BookPage() {
 
           <div className="mt-14 grid lg:grid-cols-5 gap-8">
             <Reveal className="lg:col-span-2">
-              <div className="rounded-3xl border border-white/8 bg-onyx-soft p-7 md:p-8">
+              <div className="rounded-3xl border border-foreground/10 bg-ivory-soft p-7 md:p-8">
                 <h2 className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">What to expect</h2>
                 <ul className="mt-6 space-y-4 text-sm">
                   {[
@@ -86,7 +86,7 @@ function BookPage() {
             </Reveal>
 
             <Reveal delay={0.1} className="lg:col-span-3">
-              <div className="relative rounded-3xl border border-primary/20 bg-onyx-soft p-7 md:p-8">
+              <div className="relative rounded-3xl border border-primary/20 bg-ivory-soft p-7 md:p-8">
                 <CalendlyWidget 
                   url="https://calendly.com/jatin-jadoun8e/optivise-strategy-call"
                   height="700px"
@@ -114,9 +114,9 @@ function buildCalendlyUrl(
     if (prefill.email) url.searchParams.set("email", prefill.email);
     if (prefill.goal) url.searchParams.set("a1", prefill.goal);
     url.searchParams.set("hide_gdpr_banner", "1");
-    url.searchParams.set("background_color", "0B0F0F");
-    url.searchParams.set("text_color", "ffffff");
-    url.searchParams.set("primary_color", "D4AF37");
+    url.searchParams.set("background_color", "FFFFFF");
+    url.searchParams.set("text_color", "0B0F0F");
+    url.searchParams.set("primary_color", "4CAF50");
     return url.toString();
   } catch {
     return null;

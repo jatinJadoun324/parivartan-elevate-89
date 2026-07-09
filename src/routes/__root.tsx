@@ -35,7 +35,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Done-for-you fitness, nutrition, and nutrition products for busy professionals. $349/month all-inclusive premium transformation coaching.",
+          "Done-for-you fitness, nutrition, and nutrition products for busy professionals. Contact for pricing after free strategy call — all-inclusive premium transformation coaching.",
       },
       { name: "author", content: "Parivartan Nutrition" },
       { property: "og:type", content: "website" },

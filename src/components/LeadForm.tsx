@@ -168,7 +168,7 @@ export function LeadForm({ onClose, variant = "modal" }: LeadFormProps) {
 }
 
 const inputCls =
-  "w-full h-12 rounded-xl bg-onyx-soft border border-white/10 px-4 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors";
+  "w-full h-12 rounded-xl bg-ivory-soft border border-foreground/10 px-4 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition-colors";
 
 function Field({
   label,
